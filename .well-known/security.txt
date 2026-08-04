@@ -1,0 +1,9 @@
+Contact: mailto:umbracore.solutions@outlook.com
+Expires: 2027-08-04T00:00:00Z
+Preferred-Languages: en, es
+Canonical: https://umbracore-dynamics.github.io/.well-known/security.txt
+Policy: https://github.com/Umbracore-Dynamics/umbracore-dynamics.github.io/blob/main/SECURITY.md
+Acknowledgments: https://github.com/Umbracore-Dynamics/umbracore-dynamics.github.io/blob/main/COPYRIGHT-ENFORCEMENT.md
+
+# No authorization to test, scan, exploit, disrupt, or access any system is granted by this file.
+# Prior written authorization and defined rules of engagement are required.
