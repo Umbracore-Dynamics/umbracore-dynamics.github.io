@@ -1,0 +1,33 @@
+name: Enforce localization and binary themes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/enforce-localization.js
+      - .github/workflows/enforce-localization.yml
+
+permissions:
+  contents: write
+
+jobs:
+  enforce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Apply language and theme policies
+        run: node scripts/enforce-localization.js
+      - name: Commit generated website update
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No website changes required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Enforce complete localization and persistent binary themes"
+          git push
