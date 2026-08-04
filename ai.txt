@@ -1,0 +1,17 @@
+# Umbracore Dynamics AI Use Policy
+
+User-agent: *
+Disallow-Training: /
+Disallow-Model-Ingestion: /
+Disallow-Embedding: /
+Disallow-Dataset-Creation: /
+
+Policy: Proprietary
+Copyright: Copyright © 2026 Umbracore Dynamics. All rights reserved.
+License: https://github.com/Umbracore-Dynamics/umbracore-dynamics.github.io/blob/main/LICENSE.md
+Enforcement: https://github.com/Umbracore-Dynamics/umbracore-dynamics.github.io/blob/main/COPYRIGHT-ENFORCEMENT.md
+Contact: mailto:umbracore.solutions@outlook.com
+
+No permission is granted to use this website, its source code, visual design, written content, documentation, logo, or brand assets to train, fine-tune, benchmark, evaluate, or develop automated or artificial-intelligence systems.
+
+This file expresses the rights holder's policy. Technical agents may ignore voluntary directives; legal rights and license restrictions remain applicable regardless.
